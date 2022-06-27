@@ -5,7 +5,7 @@ import CodeParallax from '../CodeParallax/CodeParallax';
 
 function Navitem(props){
   return (
-      <Link className='et-hero-tab' activeClass="active" smooth spy to={props.section.id}>
+      <Link className='et-hero-tab' activeClass="active" smooth spy to={props.section.id} duration={600} offset={-70}>
         {props.section.name[props.language]}
       </Link>
   )

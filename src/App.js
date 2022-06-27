@@ -16,7 +16,7 @@ class App extends React.Component {
       language: Cookies.get('language') || 'pl'
     };
     this.handleLanguageChange = this.handleLanguageChange.bind(this);
-    this.sections = [{id: 'about', name: {'pl': 'O mnie', 'en': 'About'}}, {id: 'projects', name: {'pl': 'Projekty', 'en': 'Projects'}}, {id: 'experience', name: {'pl': 'Edukacja i Doświadczenie', 'en': 'Education & Experience'}}, {id: 'contact', name: {'pl': 'Kontakt', 'en': 'Contact'}}];
+    this.sections = [{id: 'about', name: {'pl': 'O mnie', 'en': 'About'}}, {id: 'projects', name: {'pl': 'Projekty', 'en': 'Projects'}}, {id: 'experience', name: {'pl': 'Edukacja', 'en': 'Education'}}, {id: 'contact', name: {'pl': 'Kontakt', 'en': 'Contact'}}];
   }
 
   handleLanguageChange(event) {

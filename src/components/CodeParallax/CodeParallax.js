@@ -39,8 +39,8 @@ export default function CodeParallax(props) {
             12
           <div className='codeParallaxContent container'>
             <Link smooth spy to={"about"}>
-              <p style={{fontSize: '6.5em', fontWeight:'bold', color: '#a7daff'}} className='text-4 row'><span className='col'>Krzysztof Nasuta</span></p>
-              <p style={{fontSize: '2em', fontWeight:'bold', color: '#bee9e8'}} className='text-4 row'><span className='col'>{props.language === 'pl' ? 'Junior Developer' : 'Junior Developer'}</span></p>
+              <p style={{fontSize: '6.5em', fontWeight:'bold', color: '#a7daff'}} className='row'><span className='col'>Krzysztof Nasuta</span></p>
+              <p style={{fontSize: '2em', fontWeight:'bold', color: '#bee9e8'}} className='row'><span className='col'>{props.language === 'pl' ? 'Junior Developer' : 'Junior Developer'}</span></p>
             </Link>
           </div>
           </ParallaxBanner>

@@ -43,6 +43,7 @@ class App extends React.Component {
         <section id="contact"><Contact language={this.state.language}/></section>
       </div>
 
+
     );
   }
 }

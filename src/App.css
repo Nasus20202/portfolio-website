@@ -8,35 +8,35 @@
 }
 
 .text-0{
-  color: var(--color-0)
+  color: var(--color-0) !important;
 }
 .text-1{
-  color: var(--color-1)
+  color: var(--color-1) !important;
 }
 .text-2{
-  color: var(--color-2)
+  color: var(--color-2) !important;
 }
 .text-3{
-  color: var(--color-3)
+  color: var(--color-3) !important;
 }
 .text-4{
-  color: var(--color-4)
+  color: var(--color-4) !important;
 }
 
 
 .bg-0{
-  background-color: var(--color-0)
+  background-color: var(--color-0) !important;
 }
 .bg-1{
-  background-color: var(--color-1)
+  background-color: var(--color-1) !important;
 }
 .bg-2{
-  background-color: var(--color-2)
+  background-color: var(--color-2) !important;
 }
 .bg-3{
-  background-color: var(--color-3)
+  background-color: var(--color-3) !important;
 }
 .bg-4{
-  background-color: var(--color-4)
+  background-color: var(--color-4) !important;
 }
 

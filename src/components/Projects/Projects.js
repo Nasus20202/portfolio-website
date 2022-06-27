@@ -8,8 +8,8 @@ function Project(props){
     const github = props.project.github !== '' ? <Card.Link className="btn btn-dark" href={props.project.github} target="_blank">Github <Github/></Card.Link> : '';
     const page = props.project.website !== '' ? <Card.Link className="btn btn-secondary" href={props.project.website} target="_blank">{props.language === 'pl' ? 'Strona' : 'Website'} <Globe2/></Card.Link> : '';
     return(
-            <Card style={{width: '100%'}} className="text-4 mb-4">
-                <Card.Body className="bg-0">
+            <Card style={{width: '100%'}} className="text-4 mb-4 bg-0">
+                <Card.Body>
                     <Card.Title className="raleway" style={{fontWeight: 'bold'}}>{props.project.name[props.language]}</Card.Title>
                     <Card.Text>
                     {props.project.about[props.language]}
@@ -29,7 +29,7 @@ class Projects extends React.Component
             {name: {'pl': 'Sklep - ASP.NET Core MVC', 'en': 'ASP.NET Core MVC Shop'}, about: {'pl': 'Sklep internetowy wykonany z użyciem frameworka ASP.NET Core. Zawiera system magazynu, konta użytkowników oraz panel administracyjny.', 'en': 'Online shop created using ASP.NET Core framework. Includes warehouse system, tenants accounts and admin panel.'}, github: 'https://github.com/Nasus20202/AspShop', website: 'https://www.example.com'},
             {name: {'pl': 'SpotiTrack dla Discorda', 'en': 'SpotiTrack for Discord'}, about: {'pl': 'Skrypt Python pokazujący obecnie słuchany utwór na Spotify jako status na Discordzie. Program liczy także odtworzenia każdej piosenki i przedstawia statystki w sekcji "O mnie" profilu.', 'en': 'Python script showing the currently listened track on Spotify as Discord status. The program also counts streams of each song and shows the statistics in the "About Me" section of the profile.'}, github: 'https://github.com/Nasus20202/SpotiTrackForDiscord', website: ''},
             {name: {'pl': 'Family App', 'en': 'Family App'}, about: {'pl': 'Aplikacja Internetowa ASP.NET Core przeznaczona dla rodzin. Zawiera wspolną listę zadań do zrobienia oraz liste zakupów. Posiada zintegrowany chat.', 'en': 'ASP.NET Core web app for families. Includes a shared to-do list and a shopping list. It has an integrated chat.'}, github: 'https://github.com/Nasus20202/FamilyApp', website: 'https://www.example.com'},
-            {name: {'pl': 'Django Sklep', 'en': 'Django Store'}, about: {'pl': 'Prosty sklep internetowy wykonany z użyciem frameworka Django. Umożliwia przeglądanie oraz zamawianie produktów. Przygotowany jako prjekt do liceum.', 'en': 'A simple online store made using the Django framework. It allows you to view and order products. Prepared as a high school project.'}, github: 'https://github.com/Nasus20202/django-store', website: 'https://django-store.nasus.repl.co/'},
+            {name: {'pl': 'Django Store', 'en': 'Django Store'}, about: {'pl': 'Prosty sklep internetowy wykonany z użyciem frameworka Django. Umożliwia przeglądanie oraz zamawianie produktów. Przygotowany jako prjekt do liceum.', 'en': 'A simple online store made using the Django framework. It allows you to view and order products. Prepared as a high school project.'}, github: 'https://github.com/Nasus20202/django-store', website: 'https://django-store.nasus.repl.co/'},
             {name: {'pl': 'Cryptenz', 'en': 'Cryptenz'}, about: {'pl': 'Cryptenz to bot Discord, wykonany z użyciem biblioteki Discord.js, umożliwiający śledzenie kursów kryptowalut. Bot wyświetla je w formie wiadomości oraz jak swój status.', 'en': 'Cryptenz is a Discord bot that allows you to track cryptocurrency rates. The bot displays them in the form of messages as well as its status.'}, github: 'https://github.com/Nasus20202/Cryptenz', website: ''},
             {name: {'pl': 'Skracacz linków', 'en': 'Link cutter'}, about: {'pl': 'Aplikacja internetowa umożliwiająca zastąpienie długiego linku krótkim.', 'en': 'A web application that allows you to replace a long link with a short one.'}, github: 'https://github.com/Nasus20202/LinkCutter', website: 'https://www.example.com'},
             {name: {'pl': 'Wizualizator playlist', 'en': 'Playlist visualizer'}, about: {'pl': 'Wizualizator playlist to skrypt generujący graf reprezentujący playlistę na Spotify.', 'en': 'Playlist Visualizer is a script that generates a graph representing a Spotify playlist.'}, github: 'https://github.com/Nasus20202/PlaylistVisualizer', website: ''},
@@ -50,10 +50,10 @@ class Projects extends React.Component
             <div>
                 <ParallaxProvider>
                     <ParallaxBanner
-                        layers={[{ image: 'bg1.webp', speed: 25 }]}
+                        layers={[{ image: 'bg1.webp', speed: 15 }]}
                         className="aspect-[2/1]"
                     >
-                    <div className="container  parallaxContent">
+                    <div className="container parallaxContent">
                         <div className="row">
                             <div className="col-md">
                                 <p style={{fontSize: '4em'}} className='raleway text-0'>{this.props.language === 'pl' ? "Projekty" : 'Projects'}</p>

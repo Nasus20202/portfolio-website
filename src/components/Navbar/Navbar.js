@@ -1,8 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
-import {Row, Col} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
+import Parralax from '../Parallax/Parallax';
 
 function Navitem(props){
   return (
@@ -13,27 +12,55 @@ function Navitem(props){
 }
 
 class Navbar extends React.Component {
+
   constructor(props) {
     super(props);
-    this.sections = [{id: 'about', name: {'pl': 'O mnie', 'en': 'About'}}, {id: 'projects', name: {'pl': 'Projekty', 'en': 'Projects'}}, {id: 'experience', name: {'pl': 'Edukacja i Doświadczenie', 'en': 'Education & Experience'}}, {id: 'contact', name: {'pl': 'Kontakt', 'en': 'Contact'}}];
+    this.state = {position: 0};
+    this.navtop = 0;
+    this.sections = this.props.sections;
+  }
+
+  listenToScroll = () => {
+    if(this.navtop === 0){
+      this.navtop = document.getElementById('tabs-container').offsetTop;
+    }
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    if(window.scrollY >= this.navtop){
+      document.getElementById('tabs-container').classList.add('et-hero-tabs-container--top');
+    }
+    else{
+      document.getElementById('tabs-container').classList.remove('et-hero-tabs-container--top');
+    }
+    const scrolled = winScroll / height
+    this.setState({
+      position: scrolled,
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenToScroll)
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenToScroll)
   }
 
   render() {
     let navItems = this.sections.map(section => {
       return <Navitem section={section} language={this.props.language} key={section['id']} />
     });
+    let languageButton = <div style={{width: '40px', margin: '15px'}} onClick={this.props.changeLanguage}>
+    <img src={this.props.language === 'pl' ? 'en.svg' : 'pl.svg'} alt='language'/>
+    </div>
     return (
-      <section class="et-hero-tabs container-fluid">
-      <h1>STICKY SLIDER NAV</h1>
-      <h3>Sliding content with sticky tab nav</h3>
-      <div class="et-hero-tabs-container">
+      <nav className="et-hero-tabs container-fluid">
+      <Parralax language={this.props.language}/>
+      <div id="tabs-container" className="et-hero-tabs-container">
         {navItems}
-        <Button onClick={this.props.changeLanguage}>
-          {this.props.language === 'pl' ? 'Polski' : 'English'}
-        </Button>
-        <span class="et-hero-tab-slider"></span>
+        {languageButton}
       </div>
-    </section>
+    </nav>
     );
   }
 }

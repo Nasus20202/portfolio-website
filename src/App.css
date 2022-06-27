@@ -1,4 +1,46 @@
 section  {
-    margin:0em 10em 10em 10em;
-    padding:3em 10em 3em 10em;
+    margin:0em 10em 15em 0em;
+    padding:30em 10em 30em 30em;
   }
+
+:root {
+  --color-0: #0d1b2a;
+  --color-1: #1b263b;
+  --color-2: #415a77;
+  --color-3: #778da9;
+  --color-4: #e0e1dd;
+}
+
+.text-0{
+  color: var(--color-0)
+}
+.text-1{
+  color: var(--color-1)
+}
+.text-2{
+  color: var(--color-2)
+}
+.text-3{
+  color: var(--color-3)
+}
+.text-4{
+  color: var(--color-4)
+}
+
+
+.bg-0{
+  background-color: var(--color-0)
+}
+.bg-1{
+  background-color: var(--color-1)
+}
+.bg-2{
+  background-color: var(--color-2)
+}
+.bg-3{
+  background-color: var(--color-3)
+}
+.bg-4{
+  background-color: var(--color-4)
+}
+

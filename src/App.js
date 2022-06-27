@@ -3,6 +3,11 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -32,11 +37,10 @@ class App extends React.Component {
     return (
       <div className='bg-1 text-4'>
         <Navbar sections={this.sections} changeLanguage={this.handleLanguageChange} language={this.state.language}/>
-        Language: {this.state.language}
-        <section id="about">About Me</section>
-        <section id="projects">Projects</section>
-        <section id="experience">Education and experience</section>
-        <section id="contact">Contact</section>
+        <section id="about"><About language={this.state.language}/></section>
+        <section id="projects"><Projects language={this.state.language}/></section>
+        <section id="experience"><Experience language={this.state.language}/></section>
+        <section id="contact"><Contact language={this.state.language}/></section>
       </div>
 
     );

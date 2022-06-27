@@ -51,7 +51,7 @@ class Navbar extends React.Component {
       return <Navitem section={section} language={this.props.language} key={section['id']} />
     });
     let languageButton = <div style={{width: '40px', margin: '15px', minWidth: '40px'}} onClick={this.props.changeLanguage}>
-    <img src={this.props.language === 'pl' ? 'en.svg' : 'pl.svg'} alt='language'/>
+    <img className='img-fluid' src={this.props.language === 'pl' ? 'en.svg' : 'pl.svg'} alt='language'/>
     </div>
     return (
       <nav className="et-hero-tabs container-fluid">

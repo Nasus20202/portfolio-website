@@ -37,10 +37,10 @@ export default function CodeParallax(props) {
           ]}
           style={{ aspectRatio: '2 / 1' }}>
             12
-          <div className='codeParallaxContent row'>
+          <div className='codeParallaxContent container'>
             <Link smooth spy to={"about"}>
-              <p style={{fontSize: '6.5em'}} className='text-4'>Krzysztof Nasuta</p>
-              <p style={{fontSize: '2em'}} className='text-4'>{props.language === 'pl' ? 'Junior Developer' : 'Junior Developer'}</p>
+              <p style={{fontSize: '6.5em', fontWeight:'bold', color: '#cae9ff'}} className='text-4 row'><span className='col'>Krzysztof Nasuta</span></p>
+              <p style={{fontSize: '2em', fontWeight:'bold', color: '#bee9e8'}} className='text-4 row'><span className='col'>{props.language === 'pl' ? 'Junior Developer' : 'Junior Developer'}</span></p>
             </Link>
           </div>
           </ParallaxBanner>

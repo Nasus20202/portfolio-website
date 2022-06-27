@@ -25,7 +25,7 @@ class Experience extends React.Component
         super(props);
         this.contacts =[
             {name: {'pl': 'GitHub', 'en': 'GitHub'}, value: {'pl': 'Nasus20202', 'en': 'Nasus20202'}, link:'https://github.com/Nasus20202/', icon:<Github/>},
-            {name: {'pl': 'Email', 'en': 'GitHub'}, value: {'pl': 'krzysztof.nasuta@wp.pl', 'en': 'krzysztof.nasuta@wp.pl'}, link:'mailto:krzysztof.nasuta@wp.pl', icon:<Envelope/>},
+            {name: {'pl': 'Email', 'en': 'Email'}, value: {'pl': 'krzysztof.nasuta@wp.pl', 'en': 'krzysztof.nasuta@wp.pl'}, link:'mailto:krzysztof.nasuta@wp.pl', icon:<Envelope/>},
             {name: {'pl': 'Telefon', 'en': 'Phone'}, value: {'pl': '786 17 12 00', 'en': '+48 786 17 12 00'}, link:'tel:+48786171200', icon:<Telephone/>},
             {name: {'pl': 'Discord', 'en': 'Discord'}, value: {'pl': 'Nasus#8143', 'en': 'Nasus#8143'}, link:'', icon:<Discord/>},
         ];

@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import CodeParallax from '../CodeParallax/CodeParallax';
+import {Navbar as NavbarBs, NavDropdown, Nav, Container}  from 'react-bootstrap';
 
 function Navitem(props){
   return (
@@ -15,7 +16,6 @@ class Navbar extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {position: 0};
     this.navtop = 0;
     this.sections = this.props.sections;
   }
@@ -24,18 +24,12 @@ class Navbar extends React.Component {
     if(this.navtop === 0){
       this.navtop = document.getElementById('tabs-container').offsetTop;
     }
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-    if(window.scrollY >= this.navtop){
+    if(window.scrollY >= window.innerHeight - 70){
       document.getElementById('tabs-container').classList.add('et-hero-tabs-container--top');
     }
     else{
       document.getElementById('tabs-container').classList.remove('et-hero-tabs-container--top');
     }
-    const scrolled = winScroll / height
-    this.setState({
-      position: scrolled,
-    })
   }
 
   componentDidMount() {
@@ -50,7 +44,7 @@ class Navbar extends React.Component {
     let navItems = this.sections.map(section => {
       return <Navitem section={section} language={this.props.language} key={section['id']} />
     });
-    let languageButton = <div style={{width: '40px', margin: '15px', minWidth: '40px'}} onClick={this.props.changeLanguage}>
+    let languageButton = <div  className="language-button " onClick={this.props.changeLanguage}>
     <img className='img-fluid' src={this.props.language === 'pl' ? 'en.svg' : 'pl.svg'} alt='language'/>
     </div>
     return (

@@ -12,7 +12,7 @@ body {
 }
 
 .raleway{
-  font-family: 'Raleway', inherit;
+  font-family: 'Raleway', inherit !important;
 }
 
 code {

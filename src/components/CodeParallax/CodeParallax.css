@@ -5,3 +5,18 @@
   width: 98vw;
   max-width: 98vw;
 }
+
+.codeParallaxContent {
+    position: relative;
+    top: 20vh;
+    width: 80vw;
+    left: 10vw;
+    backdrop-filter: grayscale(.8) blur(30px);
+    box-shadow: inset 0 0 0 200px rgba(128,128,128,0.5);
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    font-family: 'Raleway';
+    border-radius: 30px;
+    color: var(--color-4) !important;
+}

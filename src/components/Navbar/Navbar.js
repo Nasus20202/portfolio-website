@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
-import Parralax from '../Parallax/Parallax';
+import CodeParallax from '../CodeParallax/CodeParallax';
 
 function Navitem(props){
   return (
@@ -50,12 +50,12 @@ class Navbar extends React.Component {
     let navItems = this.sections.map(section => {
       return <Navitem section={section} language={this.props.language} key={section['id']} />
     });
-    let languageButton = <div style={{width: '40px', margin: '15px'}} onClick={this.props.changeLanguage}>
+    let languageButton = <div style={{width: '40px', margin: '15px', minWidth: '40px'}} onClick={this.props.changeLanguage}>
     <img src={this.props.language === 'pl' ? 'en.svg' : 'pl.svg'} alt='language'/>
     </div>
     return (
       <nav className="et-hero-tabs container-fluid">
-      <Parralax language={this.props.language}/>
+      <CodeParallax language={this.props.language}/>
       <div id="tabs-container" className="et-hero-tabs-container">
         {navItems}
         {languageButton}

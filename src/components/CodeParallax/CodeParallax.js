@@ -1,11 +1,11 @@
 import React from 'react';
 import './CodeParallax.css';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
-import bg1 from "./img/bg-1.jpg";
-import bg2 from "./img/bg-2.png";
-import bg3 from "./img/bg-3.png";
-import bg4 from "./img/bg-4.png";
-import bg5 from "./img/bg-5.png";
+import code0 from "./img/code0.png";
+import code1 from "./img/code1.png";
+import code2 from "./img/code2.png";
+import code3 from "./img/code3.png";
+import code4 from "./img/code4.png";
 
 export default function CodeParallax() {
     return (
@@ -14,24 +14,24 @@ export default function CodeParallax() {
         <ParallaxBanner className='codeParallax'
           layers={[
             {
-              image: bg1,
-              speed: -50,
+              image: code0,
+              speed: -60,
             },
             {
-              image: bg2,
+              image: code1,
               speed: -40,
             },
             {
-              image: bg3,
-              speed: -30,
+              image: code2,
+              speed: -20
             },
             {
-              image: bg4,
-              speed: -20,
+              image: code3,
+              speed: 20,
             },
             {
-              image: bg5,
-              speed: -10,
+              image: code4,
+              speed: 40,
             },
           ]}
           style={{ aspectRatio: '2 / 1' }}

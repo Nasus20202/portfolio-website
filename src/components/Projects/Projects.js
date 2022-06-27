@@ -26,21 +26,22 @@ class Projects extends React.Component
     constructor(props){
         super(props)
         this.projects = [
-            {name: {'pl': 'Sklep - ASP.NET Core MVC', 'en': 'ASP.NET Core MVC Shop'}, about: {'pl': 'Sklep internetowy wykonany z użyciem frameworka ASP.NET Core.', 'en': 'Shop'}, github: 'https://github.com/Nasus20202/AspShop', website: 'https://www.example.com', img: ''},
-            {name: {'pl': 'SpotiTrack dla Discorda', 'en': 'SpotiTrack for Discord'}, about: {'pl': 'SpotiTrack1', 'en': 'SpotiTrack2'}, github: 'https://github.com/Nasus20202/SpotiTrackForDiscord', website: '', img: ''},
-            {name: {'pl': 'Aplikacja Rodzinna', 'en': 'Family App'}, about: {'pl': 'AplikacjaRodzinna', 'en': 'FamilyApp'}, github: 'https://github.com/Nasus20202/FamilyApp', website: 'https://www.example.com', img: ''},
-            {name: {'pl': 'Django Sklep', 'en': 'Django Store'}, about: {'pl': 'DjangoSklep', 'en': 'DjangoStore'}, github: 'https://github.com/Nasus20202/django-store', website: 'https://django-store.nasus.repl.co/', img: ''},
-            {name: {'pl': 'Cryptenz', 'en': 'Cryptenz'}, about: {'pl': 'Cryptenz', 'en': 'Cryptenz'}, github: 'https://github.com/Nasus20202/Cryptenz', website: '', img: ''},
-            {name: {'pl': 'Skracacz linków', 'en': 'Link cutter'}, about: {'pl': 'Skracacz', 'en': 'Cutter'}, github: 'https://github.com/Nasus20202/LinkCutter', website: 'https://www.example.com', img: ''},
-            {name: {'pl': 'Wizualizator playlist', 'en': 'Playlist visualizer'}, about: {'pl': 'Wizualizator', 'en': 'Visualizer'}, github: 'https://github.com/Nasus20202/PlaylistVisualizer', website: '', img: ''},
-            {name: {'pl': 'League Bot dla Discorda', 'en': 'League Bot for Discord'}, about: {'pl': 'lolBot', 'en': 'lolBot'}, github: 'https://github.com/Nasus20202/lolBot', website: '', img: ''}
+            {name: {'pl': 'Sklep - ASP.NET Core MVC', 'en': 'ASP.NET Core MVC Shop'}, about: {'pl': 'Sklep internetowy wykonany z użyciem frameworka ASP.NET Core. Zawiera system magazynu, konta użytkowników oraz panel administracyjny.', 'en': 'Online shop created using ASP.NET Core framework. Includes warehouse system, tenants accounts and admin panel.'}, github: 'https://github.com/Nasus20202/AspShop', website: 'https://www.example.com'},
+            {name: {'pl': 'SpotiTrack dla Discorda', 'en': 'SpotiTrack for Discord'}, about: {'pl': 'Skrypt Python pokazujący obecnie słuchany utwór na Spotify jako status na Discordzie. Program liczy także odtworzenia każdej piosenki i przedstawia statystki w sekcji "O mnie" profilu.', 'en': 'Python script showing the currently listened track on Spotify as Discord status. The program also counts streams of each song and shows the statistics in the "About Me" section of the profile.'}, github: 'https://github.com/Nasus20202/SpotiTrackForDiscord', website: ''},
+            {name: {'pl': 'Family App', 'en': 'Family App'}, about: {'pl': 'Aplikacja Internetowa ASP.NET Core przeznaczona dla rodzin. Zawiera wspolną listę zadań do zrobienia oraz liste zakupów. Posiada zintegrowany chat.', 'en': 'ASP.NET Core web app for families. Includes a shared to-do list and a shopping list. It has an integrated chat.'}, github: 'https://github.com/Nasus20202/FamilyApp', website: 'https://www.example.com'},
+            {name: {'pl': 'Django Sklep', 'en': 'Django Store'}, about: {'pl': 'Prosty sklep internetowy wykonany z użyciem frameworka Django. Umożliwia przeglądanie oraz zamawianie produktów. Przygotowany jako prjekt do liceum.', 'en': 'A simple online store made using the Django framework. It allows you to view and order products. Prepared as a high school project.'}, github: 'https://github.com/Nasus20202/django-store', website: 'https://django-store.nasus.repl.co/'},
+            {name: {'pl': 'Cryptenz', 'en': 'Cryptenz'}, about: {'pl': 'Cryptenz to bot Discord, wykonany z użyciem biblioteki Discord.js, umożliwiający śledzenie kursów kryptowalut. Bot wyświetla je w formie wiadomości oraz jak swój status.', 'en': 'Cryptenz is a Discord bot that allows you to track cryptocurrency rates. The bot displays them in the form of messages as well as its status.'}, github: 'https://github.com/Nasus20202/Cryptenz', website: ''},
+            {name: {'pl': 'Skracacz linków', 'en': 'Link cutter'}, about: {'pl': 'Aplikacja internetowa umożliwiająca zastąpienie długiego linku krótkim.', 'en': 'A web application that allows you to replace a long link with a short one.'}, github: 'https://github.com/Nasus20202/LinkCutter', website: 'https://www.example.com'},
+            {name: {'pl': 'Wizualizator playlist', 'en': 'Playlist visualizer'}, about: {'pl': 'Wizualizator playlist to skrypt generujący graf reprezentujący playlistę na Spotify.', 'en': 'Playlist Visualizer is a script that generates a graph representing a Spotify playlist.'}, github: 'https://github.com/Nasus20202/PlaylistVisualizer', website: ''},
+            {name: {'pl': 'League Bot dla Discorda', 'en': 'League Bot for Discord'}, about: {'pl': 'League Bot to bot wykonany z użyciem biblioteki Discord.py. Umożliwia użytkownikowi sprawdzić profil i mecze dowolnego gracza League of Legends.', 'en': 'League Bot is a bot made using the Discord.py library. It allows the user to check the profile and matches of any League of Legends player.'}, github: 'https://github.com/Nasus20202/lolBot', website: ''},
+            {name: {'pl': 'Czy Dobrze', 'en': 'Czy Dobrze'}, about: {'pl':'Czy Dobrze to strona, służąca do pomocy w rozwiązywaniu prac domowych. Projekt wykonany w grupie pięciu osób.', 'en': 'Czy Dobrze is a website that helps in solving homework. Project made in a group of five people.'}, github: 'https://github.com/CzyDobrze/CzyDobrze.Api', website: ''}
         ]
     }
 
     render(){
         const projects = this.projects.map((project) => {
             return(
-                <div key={project.name['en']}  className="col-md-3 d-flex align-items-stretch">
+                <div key={project.name['en']}  className="col-md-4 d-flex align-items-stretch">
                     <Project project={project} language={this.props.language}/>
                 </div>
             )

@@ -2,7 +2,6 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import CodeParallax from '../CodeParallax/CodeParallax';
-import {Navbar as NavbarBs, NavDropdown, Nav, Container}  from 'react-bootstrap';
 
 function Navitem(props){
   return (

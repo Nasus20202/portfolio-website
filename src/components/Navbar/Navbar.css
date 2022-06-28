@@ -70,5 +70,17 @@ a {
     margin: 0 15px;
 }
 
+@media screen and (max-width: 600px) {
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+  .et-hero-tab:hover{
+    font-size: 1.1rem;
+  }
+  .active{
+    font-size: 1.1rem!important;
+  }
+}
+
 
 

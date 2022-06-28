@@ -16,3 +16,27 @@
     font-family: 'Raleway';
     border-radius: 30px;
 }
+
+.main {
+  font-size: 6em;
+  font-weight:bold;
+  color: #a7daff;
+}
+
+.second {
+  font-size: 2em;
+  font-weight: bold;
+  color: #bee9e8;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    font-size: 4em;
+  }
+}

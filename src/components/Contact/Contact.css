@@ -36,4 +36,17 @@
     .contact {
       font-size: 0.75em;
     }
+    .contact:hover{
+      font-size: 0.85em;
   }
+  }
+
+  @media screen and (max-width: 450px) {
+    .contact {
+      font-size: 0.6em;
+    }
+    .contact:hover{
+      font-size: 0.7em;
+  }
+  }
+

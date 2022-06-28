@@ -4,7 +4,7 @@ import {Github, Envelope, Telephone, Discord} from 'react-bootstrap-icons'
 import {ParallaxProvider, ParallaxBanner} from 'react-scroll-parallax';
 
 function ContactLine(props){
-    const data = <div className="contact">{props.contact.icon} {props.contact.name[props.language]} &#8226; {props.contact.value[props.language]}</div>
+    const data = <div className="contact">{props.contact.icon} {props.contact.name[props.language]} &#8226; <b>{props.contact.value[props.language]}</b></div>
     let contactLine = data
     if(props.contact.link !== '') {
         contactLine = <a href={props.contact.link} target="_blank" rel="noopener noreferrer" className="no-decoration">{data}</a>

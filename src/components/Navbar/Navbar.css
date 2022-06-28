@@ -78,6 +78,10 @@ a {
   .active{
     font-size: 1.1rem!important;
   }
+  .language-button{
+    display: flex;
+      flex: 0.4;
+  }
 }
 
 

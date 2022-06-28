@@ -2,11 +2,11 @@ import React from 'react';
 import './CodeParallax.css';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-scroll';
-import code0 from "./img/code0.png";
-import code1 from "./img/code1.png";
-import code2 from "./img/code2.png";
-import code3 from "./img/code3.png";
-import code4 from "./img/code4.png";
+import code0 from "./img/code0.webp";
+import code1 from "./img/code1.webp";
+import code2 from "./img/code2.webp";
+import code3 from "./img/code3.webp";
+import code4 from "./img/code4.webp";
 
 export default function CodeParallax(props) {
     return (

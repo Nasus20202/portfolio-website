@@ -23,17 +23,17 @@ class About extends React.Component
 {
     constructor(props){
         super(props);
-        this.skills = [[{'pl': "C# i platforma .NET", 'en': 'C# and .NET platform'}, 'csharp.png'],
-                      [{'pl': "Framework ASP.NET Core", 'en': 'ASP.NET Core Framework'}, 'dotnet.png'],
-                      [{'pl': "Python", 'en': 'Python'}, 'python.png'],
-                      [{'pl': "Node.js", 'en': 'Node.js'}, 'node.png'],
-                      [{'pl': "HTML 5", 'en': 'HTML 5'}, 'html.png'],
-                      [{'pl': "CSS 3", 'en': 'CSS 3'}, 'css.png'],
-                      [{'pl': "JavaScript", 'en': 'JavaScript'}, 'javascript.png'],
-                      [{'pl': "Podstawy Django", 'en': 'Basic Django'}, 'django.png'],
-                      [{'pl': "Akademicki poziom C++", 'en': 'Academic level C++'}, 'cpp.png'],
-                      [{'pl': "Podstawy Reacta", 'en': 'Basic React'}, 'react.png'],
-                      [{'pl': "Podstawy Javy i Kotlina", 'en': 'Basic Java and Kotlin'}, 'java.png'],];
+        this.skills = [[{'pl': "C# i platforma .NET", 'en': 'C# and .NET platform'}, 'csharp.webp'],
+                      [{'pl': "Framework ASP.NET Core", 'en': 'ASP.NET Core Framework'}, 'dotnet.webp'],
+                      [{'pl': "Python", 'en': 'Python'}, 'python.webp'],
+                      [{'pl': "Node.js", 'en': 'Node.js'}, 'node.webp'],
+                      [{'pl': "HTML 5", 'en': 'HTML 5'}, 'html.webp'],
+                      [{'pl': "CSS 3", 'en': 'CSS 3'}, 'css.webp'],
+                      [{'pl': "JavaScript", 'en': 'JavaScript'}, 'javascript.webp'],
+                      [{'pl': "Podstawy Django", 'en': 'Basic Django'}, 'django.webp'],
+                      [{'pl': "Akademicki poziom C++", 'en': 'Academic level C++'}, 'cpp.webp'],
+                      [{'pl': "Podstawy Reacta", 'en': 'Basic React'}, 'react.webp'],
+                      [{'pl': "Podstawy Javy i Kotlina", 'en': 'Basic Java and Kotlin'}, 'java.webp'],];
     }
 
     render(){

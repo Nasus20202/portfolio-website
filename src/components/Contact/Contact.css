@@ -27,10 +27,13 @@
     box-shadow: inset 0 0 200px 200px rgba(0,0,0,0.3);
 }
 
-
-
 .lightblue {
     color: lightblue;   
   }
   
   
+  @media screen and (max-width: 600px) {
+    .contact {
+      font-size: 0.75em;
+    }
+  }

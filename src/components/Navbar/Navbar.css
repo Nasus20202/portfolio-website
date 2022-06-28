@@ -63,9 +63,6 @@ a {
 
 .language-button{
   display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
     flex: 0.15;
     margin: 0 15px;
 }

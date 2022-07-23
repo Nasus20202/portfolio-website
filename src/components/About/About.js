@@ -3,18 +3,37 @@ import './About.css';
 
 function ContentPl(){
     return (
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum turpis. Duis sit amet lacus eu lectus faucibus faucibus. Fusce non ligula a nibh vulputate ultricies. In est libero, ultricies eget lorem et, facilisis aliquet elit. Nulla tempus risus neque. Praesent nunc erat, rutrum vel fermentum euismod, aliquet non risus. Duis varius leo quis sodales pretium. Quisque sit amet quam aliquet, placerat elit in, porta mauris. Mauris commodo mauris ac posuere tincidunt. Praesent tempus, augue eu rhoncus semper, orci arcu porta neque, ac eleifend nunc elit a lectus. Quisque gravida tristique est, et scelerisque turpis pulvinar ac. Nulla eu lorem ipsum. Suspendisse viverra dignissim gravida. Proin mauris nisi, euismod at gravida ac, finibus nec libero.
-            Quisque volutpat enim orci, at sollicitudin turpis rhoncus sed. Mauris tortor nunc, molestie id facilisis pellentesque, convallis ut felis. Vivamus nisl ante, aliquam vitae erat nec, semper dignissim tortor. Nulla eu lectus ut lacus pellentesque ornare eu a lacus. In fringilla magna nec erat ornare, pharetra efficitur elit faucibus. Integer et rhoncus ligula. Ut semper ex in convallis tempor. Pellentesque eu mi odio. Nulla condimentum dictum blandit. Donec eleifend, risus sit amet aliquet molestie, augue massa tempor justo, at pulvinar est dolor a lacus. Nam cursus posuere finibus. 
+        <div className={"aboutMe"}>
+            Nazywam się <b>Krzysztof Nasuta</b>. Jestem studentem informatyki na Politechnice Gdańskiej. Od zawsze fascynowały mnie komputery. W szkole podstawowej zainteresowało mnie,
+            w jaki sposób tworzy się programy. W ten sposób zacząłem swoją przygodę z programowaniem. Na początku bawiłem się Scratchem. Pierwszym prawdziwym językiem programowania,
+            którego się uczyłem był Python. Od tego czasu towarzyszy mi i umożliwia wykonywanie wielu ciekawych projektów. W gimnazjum nauczyłem się podstaw frontendu,
+            czyli HTML, CSS i JavaScript. Zainteresował mnie także język C# oraz platforma .NET. Poznałem podstawy programowania aplikacji okienkowych z użyciem WPF. 
+            Nauczyłem się wtedy także podstaw języka C++. Wykorzystywałem go głównie do programowania algorytmów oraz na egzamin maturalny. 
+            W tym czasie także miałem pierwszą styczność z backendem. Moim pierwszym projektem był sklep internetowy wykonany z wykorzystaniem frameworka Django.
+            Tworzenie tego programu było dla mnie wyjątkowo ciekawe i zachęciło mnie do pogłębienia mojej wiedzy związanej z aplikacjami internetowymi. Zdecydowałem się poznać
+            framework ASP.NET Core. Z jego użyciem wykonałem m.in. nową, lepszą wersję sklepu internetowego. W międzyczasie poznałem także środowisko Node.js, które chętnie
+            wykorzystuję do tworzenia różnych botów do serwisu Discord. Aby zgromadzić wszystkie moje projekty, postanowiłem utworzyć tą stronę internetową. Była to dla mnie
+            motywacja, aby poznać JavaScriptowy framework React. <br/>
+            <p style={{marginTop: '6px'}}>W wolnym czasie lubię słuchać muzyki, spacerować po lesie oraz grać na komputerze. 
+            Uwielbiam składać komputery. Do moich hobby należą klawiatury mechaniczne. </p>
         </div>
     )
 }
 
 function ContentEn(){
     return (
-        <div>
-            Quisque volutpat enim orci, at sollicitudin turpis rhoncus sed. Mauris tortor nunc, molestie id facilisis pellentesque, convallis ut felis. Vivamus nisl ante, aliquam vitae erat nec, semper dignissim tortor. Nulla eu lectus ut lacus pellentesque ornare eu a lacus. In fringilla magna nec erat ornare, pharetra efficitur elit faucibus. Integer et rhoncus ligula. Ut semper ex in convallis tempor. Pellentesque eu mi odio. Nulla condimentum dictum blandit. Donec eleifend, risus sit amet aliquet molestie, augue massa tempor justo, at pulvinar est dolor a lacus. Nam cursus posuere finibus. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum ipsum turpis. Duis sit amet lacus eu lectus faucibus faucibus. Fusce non ligula a nibh vulputate ultricies. In est libero, ultricies eget lorem et, facilisis aliquet elit. Nulla tempus risus neque. Praesent nunc erat, rutrum vel fermentum euismod, aliquet non risus. Duis varius leo quis sodales pretium. Quisque sit amet quam aliquet, placerat elit in, porta mauris. Mauris commodo mauris ac posuere tincidunt. Praesent tempus, augue eu rhoncus semper, orci arcu porta neque, ac eleifend nunc elit a lectus. Quisque gravida tristique est, et scelerisque turpis pulvinar ac. Nulla eu lorem ipsum. Suspendisse viverra dignissim gravida. Proin mauris nisi, euismod at gravida ac, finibus nec libero.
+        <div className = {"aboutMe"}> My name is <b> Krzysztof Nasuta</b>. I am a computer science student at the Gdańsk University of Technology. I've always
+            been fascinated by computers. In primary school, I was interested in how programs are created. This is how I started my adventure in programming.
+            At first, I was playing with Scratch. As my first real programming language, I chose Python. Since then, I have been using it to create many projects.
+            Then I learned the basics of the frontend, i.e. HTML, CSS and JavaScript. I was also interested in the C# language and the .NET platform. I discovered
+            the basics of programming window applications using WPF. Then I also learned the basics of the C++ language. I used it a lot to program
+            algorithms and for the matura exam. At that time, I also had my first contact with backend programming. My first project was an online store programmed using
+            the Django framework. Creating this program was extremely interesting for me and encouraged me to deepen my knowledge related to internet applications.
+            I decided to learn the ASP.NET Core framework. With its use, I have created for example a new, better version of the online store. In the meantime,
+            I also got to know the Node.js environment which I often use to create various bots for Discord. To gather all my projects, I decided to create this website.
+            It was the motivation for me to learn the JavaScript framework React. <br/> 
+            <p style={{marginTop: '6px'}}>In my spare time, I like listening to music, walking outdoor and playing on the computer.
+            I love building computers. Mechanical keyboards are one of my hobbies.</p>
         </div>
     )
 }
@@ -49,8 +68,13 @@ class About extends React.Component
                     </div>
                     <div className="col-md-4">
                         <p style={{fontSize: '3em'}}  className='raleway'>{this.props.language === 'pl' ? "Umiejętności" : 'Skills'}</p>
-                        <ul style={{fontSize: '1.3em'}}>
+                        <ul className={"skills"}>
                             {skills}
+                        </ul>
+                        <p style={{fontSize: '1.5em'}} className='raleway'>{this.props.language === 'pl' ? "Języki" : 'Languages'}</p>
+                        <ul style={{fontSize: '1.1em'}}>
+                            <li>{this.props.language === 'pl' ? "Polski (natywnie)" : 'Polish (native)'}</li>
+                            <li>{this.props.language === 'pl' ? "Angielski (C1, certyfikat B2)" : 'English (C1, B2 cerificate)'}</li>
                         </ul>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ export default function CodeParallax(props) {
           style={{ aspectRatio: '2 / 1' }}>
             12
           <div className='codeParallaxContent container'>
-            <Link smooth spy to={"about"}>
+            <Link smooth spy to={"about"} offset={-70}>
               <div className='container'>
               <p className='row'><span className='col main'>Krzysztof Nasuta</span></p>
               <p className='row'><span className='col second'>{props.language === 'pl' ? 'Junior Developer' : 'Junior Developer'}</span></p>

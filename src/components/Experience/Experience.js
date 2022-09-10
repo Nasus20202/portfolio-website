@@ -24,7 +24,7 @@ class Experience extends React.Component
         super(props);
         this.experience =[
             {name: {'pl': 'V Liceum Ogólnokształcące w Gdańsku', 'en': 'High School no. 5 in Gdańsk'}, time: {'pl': '2019-2022', 'en': '2019-2022'}, description: {'pl': 'Profil: Matematyka, Fizyka i Informatyka', 'en': 'Profile: Mathematics, Physics and Computer Science'}},
-            {name: {'pl': 'Politechnika Gdańska', 'en': 'Gdańsk University of Technology'}, time: {'pl': 'Od 2022', 'en': 'From 2022'}, description: {'pl': 'Kierunek: Informatyka na wydziale Elektroniki, Inforamtyki i Telekomunikacji', 'en': 'Field of study: Computer Science at Faculty of Electronics, Telecommunications and Informatics'}},
+            {name: {'pl': 'Politechnika Gdańska', 'en': 'Gdańsk University of Technology'}, time: {'pl': 'Od 2022', 'en': 'From 2022'}, description: {'pl': 'Kierunek: Informatyka na wydziale Elektroniki, Informatyki i Telekomunikacji', 'en': 'Field of study: Computer Science at Faculty of Electronics, Telecommunications and Informatics'}},
         ];
         this.experience.reverse();
     }

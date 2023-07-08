@@ -48,7 +48,7 @@ class About extends React.Component
                       [{'pl': "Node.js", 'en': 'Node.js'}, 'node.webp'],
                       [{'pl': "HTML 5", 'en': 'HTML 5'}, 'html.webp'],
                       [{'pl': "CSS 3", 'en': 'CSS 3'}, 'css.webp'],
-                      [{'pl': "JavaScript", 'en': 'JavaScript'}, 'javascript.webp'],
+                      [{'pl': "TypeScript", 'en': 'TypeScript'}, 'typescript.webp'],
                       [{'pl': "Podstawy Django", 'en': 'Basic Django'}, 'django.webp'],
                       [{'pl': "Akademicki poziom C++", 'en': 'Academic level C++'}, 'cpp.webp'],
                       [{'pl': "Podstawy Reacta", 'en': 'Basic React'}, 'react.webp'],

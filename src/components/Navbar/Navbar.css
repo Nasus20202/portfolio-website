@@ -70,13 +70,13 @@ a {
 
 @media screen and (max-width: 600px) {
   .et-hero-tab {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
   .et-hero-tab:hover{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .active{
-    font-size: 1.1rem!important;
+    font-size: 0.9rem!important;
   }
   .language-button{
     display: flex;

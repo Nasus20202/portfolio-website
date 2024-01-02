@@ -26,7 +26,7 @@ class Experience extends React.Component
         this.contacts =[
             {name: {'pl': 'GitHub', 'en': 'GitHub'}, value: {'pl': 'Nasus20202', 'en': 'Nasus20202'}, link:'https://github.com/Nasus20202/', icon:<Github/>},
             {name: {'pl': 'Email', 'en': 'Email'}, value: {'pl': 'krzysztof@nasuta.dev', 'en': 'krzysztof@nasuta.dev'}, link:'mailto:krzysztof@nasuta.dev', icon:<Envelope/>},
-            {name: {'pl': 'Discord', 'en': 'Discord'}, value: {'pl': 'Nasus#8143', 'en': 'Nasus#8143'}, link:'', icon:<Discord/>},
+            {name: {'pl': 'Discord', 'en': 'Discord'}, value: {'pl': 'nasus.', 'en': 'nasus.'}, link:'', icon:<Discord/>},
             {name: {'pl': 'LinkedIn', 'en': 'LinkedIn'}, value: {'pl': 'krzysztof-nasuta', 'en': 'krzysztof-nasuta'}, link:'https://www.linkedin.com/in/krzysztof-nasuta/', icon:<Linkedin/>}
         ];
     }

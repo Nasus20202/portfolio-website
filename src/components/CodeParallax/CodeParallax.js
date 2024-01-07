@@ -36,7 +36,6 @@ export default function CodeParallax(props) {
             },
           ]}
           style={{ aspectRatio: '2 / 1' }}>
-            12
           <div className='codeParallaxContent container'>
             <Link smooth spy to={"about"} offset={-70}>
               <div className='container'>

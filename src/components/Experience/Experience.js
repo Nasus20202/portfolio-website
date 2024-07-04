@@ -31,10 +31,10 @@ class Experience extends React.Component
                 } 
             },
             {   name: { 'pl': 'Staż w Dynatrace', 'en': 'Dynatrace Internship' }, 
-                time: { 'pl': '07.2023 - 09.2023', 'en': '07.2023 - 09.2023' }, 
+                time: { 'pl': '07.2023 - 09.2023, 07.2024 - obecnie', 'en': '07.2023 - 09.2023, 07.2024 - current' }, 
                 description: { 
-                    'pl': 'Pracowałem nad aplikacją demo Dynatrace. Byłem odpowiedzialny za refaktoryzację mikroserwisu. Technologie: ASP.NET Core, Docker', 
-                    'en': 'I was working on the Dynatrace demo application. I was responsible for refactoring a microservice. Stack: ASP.NET Core, Docker' 
+                    'pl': 'Jako członek zespołu odpowiedzialnego za aplikacje demo dla oprogramowania Dynatrace, pracowałem nad aplikacją webową opartą na mikroserwisach.', 
+                    'en': 'As a member of a team responsible for the demo apps for Dynatrace software, I was working on microservices based web app.' 
                 } 
             },
         ];

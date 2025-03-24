@@ -16,8 +16,8 @@ a {
 
 .active {
   font-weight: 900;
-  font-size: 1.5em !important;
-  color: var(--color-1) !important;
+  font-size: 1.5em;
+  color: var(--color-1);
   background-color: var(--color-3);
 }
 
@@ -74,7 +74,7 @@ a {
     font-size: 0.9rem;
   }
   .active {
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
   }
   .language-button {
     display: flex;

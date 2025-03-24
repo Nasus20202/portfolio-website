@@ -83,7 +83,7 @@ class Experience extends React.Component {
           >
             <div className=" container parallaxContent parallaxContact">
               <div className="row">
-                <div className="col-md  d-flex align-items-stretch justify-content-center ">
+                <div className="col-md d-flex align-items-stretch justify-content-center">
                   <p style={{ fontSize: "4em" }} className="raleway lightblue">
                     {this.props.language === "pl" ? "Kontakt" : "Contact"}
                   </p>
@@ -94,7 +94,7 @@ class Experience extends React.Component {
                 <br />
                 <br />
                 <div className="row">
-                  <div className="lightblue col-md-12  d-flex align-items-stretch justify-content-center">
+                  <div className="lightblue col-md-12 d-flex align-items-stretch justify-content-center">
                     Krzysztof Nasuta &copy; {year}
                   </div>
                 </div>

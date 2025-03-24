@@ -6,7 +6,7 @@ import CodeParallax from "../CodeParallax/CodeParallax";
 function Navitem(props) {
   return (
     <Link
-      className="et-hero-tab"
+      className="navbar-tab"
       activeClass="active"
       spy={true}
       smooth={true}
@@ -33,11 +33,11 @@ class Navbar extends React.Component {
     if (window.scrollY >= window.innerHeight - 70) {
       document
         .getElementById("tabs-container")
-        .classList.add("et-hero-tabs-container--top");
+        .classList.add("navbar-tabs-container--top");
     } else {
       document
         .getElementById("tabs-container")
-        .classList.remove("et-hero-tabs-container--top");
+        .classList.remove("navbar-tabs-container--top");
     }
   };
 
@@ -69,9 +69,9 @@ class Navbar extends React.Component {
       </div>
     );
     return (
-      <nav className="et-hero-tabs container-fluid">
+      <nav className="navbar-tabs">
         <CodeParallax language={this.props.language} />
-        <div id="tabs-container" className="et-hero-tabs-container">
+        <div id="tabs-container" className="navbar-tabs-container">
           {navItems}
           {languageButton}
         </div>

@@ -27,6 +27,17 @@ class Experience extends React.Component {
     this.experience = [
       {
         name: {
+          pl: "",
+          en: "",
+        },
+        time: { pl: "", en: "" },
+        description: {
+          pl: "",
+          en: "",
+        },
+      },
+      {
+        name: {
           pl: "Politechnika Gdańska",
           en: "Gdańsk University of Technology",
         },
@@ -39,8 +50,8 @@ class Experience extends React.Component {
       {
         name: { pl: "Staż w Dynatrace", en: "Dynatrace Internship" },
         time: {
-          pl: "07.2023 - 09.2023, 07.2024 - obecnie",
-          en: "07.2023 - 09.2023, 07.2024 - current",
+          pl: "07.2023 - 09.2023, 07.2024 - 03.2025",
+          en: "07.2023 - 09.2023, 07.2024 - 03.2025",
         },
         description: {
           pl:
@@ -51,6 +62,20 @@ class Experience extends React.Component {
             "As a member of a team responsible for the demo apps for the Dynatrace software, " +
             "I worked on a demo web application based on microservices. " +
             "I also had the opportunity to work with Kubernetes environment and technologies like Terraform and Ansible.",
+        },
+      },
+      {
+        name: {
+          pl: "Software Engineer I w Dynatrace",
+          en: "Software Engineer I at Dynatrace",
+        },
+        time: {
+          pl: "03.2025 - obecnie",
+          en: "03.2025 - current",
+        },
+        description: {
+          pl: "",
+          en: "",
         },
       },
     ];

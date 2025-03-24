@@ -2,8 +2,8 @@
   overflow: hidden;
   position: relative;
   height: 100vh;
-  width: 98vw !important;
-  max-width: 98vw;
+  width: 100vw;
+  max-width: 100vw;
 }
 
 .codeParallaxContent {

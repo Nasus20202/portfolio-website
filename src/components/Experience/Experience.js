@@ -43,8 +43,8 @@ class Experience extends React.Component {
         },
         time: { pl: "Od 2022", en: "From 2022" },
         description: {
-          pl: "Kierunek: Informatyka na wydziale Elektroniki, Informatyki i Telekomunikacji",
-          en: "Field of study: Computer Science at Faculty of Electronics, Telecommunications and Informatics",
+          pl: "Ukończone studia inżynierskie na kierunku Informatyka na wydziale Elektroniki, Informatyki i Telekomunikacji",
+          en: "Completed bachelor's degree in Computer Science at Faculty of Electronics, Telecommunications and Informatics",
         },
       },
       {

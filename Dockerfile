@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM nginx:1.29.5-alpine AS runner
+FROM nginx:1.29.6-alpine AS runner
 
 WORKDIR /app
 

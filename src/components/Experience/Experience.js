@@ -27,17 +27,6 @@ class Experience extends React.Component {
     this.experience = [
       {
         name: {
-          pl: "",
-          en: "",
-        },
-        time: { pl: "", en: "" },
-        description: {
-          pl: "",
-          en: "",
-        },
-      },
-      {
-        name: {
           pl: "Politechnika Gdańska",
           en: "Gdańsk University of Technology",
         },
@@ -70,8 +59,26 @@ class Experience extends React.Component {
           en: "Software Engineer I at Dynatrace",
         },
         time: {
-          pl: "03.2025 - obecnie",
-          en: "03.2025 - current",
+          pl: "03.2025 - 05.2026",
+          en: "03.2025 - 05.2026",
+        },
+        description: {
+          pl:
+            "W poszukiwaniu nowych wyzwań i możliwości rozwoju, zdecydowałem się na zmianę zespołu w Dynatrace. " +
+            "Dołączyłem do zespołu pracującego w domenie Access Control, gdzie miałem okazję pracować nad rozwojem implementacji OAuth 2.0 dla platformy Dynatrace.",
+          en:
+            "Seeking new challenges and growth opportunities, I decided to change teams within Dynatrace. " +
+            "I joined a team working in the Access Control domain, where I had the opportunity to work on the development of OAuth 2.0 implementation for the Dynatrace platform.",
+        },
+      },
+      {
+        name: {
+          pl: "Software Engineer II w Dynatrace",
+          en: "Software Engineer II at Dynatrace",
+        },
+        time: {
+          pl: "06.2026 - obecnie",
+          en: "06.2026 - current",
         },
         description: {
           pl: "",

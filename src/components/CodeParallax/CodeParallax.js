@@ -47,8 +47,8 @@ export default function CodeParallax(props) {
                 <p className="row">
                   <span className="col second">
                     {props.language === "pl"
-                      ? "Junior Developer"
-                      : "Junior Developer"}
+                      ? "Software Developer"
+                      : "Software Developer"}
                   </span>
                 </p>
               </div>

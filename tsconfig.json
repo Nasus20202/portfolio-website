@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vitest/globals", "node"]
+  },
+  "include": ["src/**/*", "e2e/**/*", "env.d.ts", "**/*.ts", "**/*.tsx", "**/*.astro"]
+}

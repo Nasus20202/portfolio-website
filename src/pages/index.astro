@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+import AboutMe from '../components/AboutMe.astro';
+import SkillsLog from '../components/SkillsLog.astro';
+import CommitTimeline from '../components/CommitTimeline.tsx';
+import { personalInfo } from '../data/content';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{personalInfo.name}</title>
+  </head>
+  <body
+    class="bg-zinc-900 text-zinc-400 font-sans antialiased selection:bg-zinc-800 selection:text-white lg:h-screen lg:overflow-hidden"
+  >
+    <main class="mx-auto max-w-7xl lg:h-full lg:min-h-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:h-full lg:min-h-0">
+        <!-- Left Column: Timeline -->
+        <div
+          class="flex flex-col gap-8 order-2 lg:order-1 lg:h-full lg:overflow-y-auto no-scrollbar px-3 py-6 md:px-6 md:py-12 lg:pb-12"
+        >
+          <section id="experience" class="h-full">
+            <CommitTimeline client:load />
+          </section>
+        </div>
+
+        <!-- Right Column: About & Skills -->
+        <div
+          class="flex flex-col gap-10 order-1 lg:order-2 lg:h-full lg:overflow-y-auto no-scrollbar px-3 py-6 md:px-6 md:py-12 lg:pb-12"
+        >
+          <AboutMe />
+          <section id="skills">
+            <SkillsLog />
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>

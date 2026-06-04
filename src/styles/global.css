@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Lato', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-lato: 'Lato', system-ui, sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-400: #a1a1aa;
+  --color-emerald-400: #34d399;
+  --color-violet-400: #a78bfa;
+  --color-amber-400: #fbbf24;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-900 text-zinc-400 antialiased overflow-x-hidden;
+    font-family: var(--font-lato);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white;
+  }
+}

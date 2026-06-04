@@ -1,0 +1,45 @@
+---
+import { skills } from '../data/content';
+import { getShortHash } from '../utils/hash';
+import { icon } from '../utils/icon';
+import { personalInfo } from '../data/content';
+---
+
+<div class="rounded-xl border border-zinc-800 bg-zinc-900/80 overflow-hidden shadow-sm">
+  <div class="border-b border-zinc-800 bg-zinc-950 px-4 py-3 flex items-center gap-2">
+    <div class="ml-2 text-xs font-mono text-zinc-500">
+      {personalInfo.alias.toLowerCase()}@portfolio: ~/skills$ git log --oneline
+    </div>
+  </div>
+
+  <div class="p-4 md:p-6 font-mono text-sm sm:text-base space-y-5">
+    {
+      skills.map((category) => {
+        const hash = getShortHash(category.id);
+        return (
+          <div class="flex flex-col gap-2 group">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div class="flex items-center gap-3">
+                <span class="text-amber-400 group-hover:text-amber-300 transition-colors">
+                  {hash}
+                </span>
+                <span class="text-zinc-300">feat: {category.name}</span>
+              </div>
+              <div class="flex gap-2 sm:ml-auto opacity-70 group-hover:opacity-100 transition-opacity">
+                {category.icons.map((slug) => {
+                  const iconSvg = icon(slug, { class: 'h-5 w-5 fill-current text-zinc-400' });
+                  return iconSvg ? <span set:html={iconSvg} /> : null;
+                })}
+              </div>
+            </div>
+            {category.details && (
+              <div class="text-xs text-zinc-500 sm:ml-15 pl-3 border-l border-zinc-700">
+                {category.details}
+              </div>
+            )}
+          </div>
+        );
+      })
+    }
+  </div>
+</div>

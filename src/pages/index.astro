@@ -4,6 +4,8 @@ import AboutMe from '../components/AboutMe.astro';
 import SkillsLog from '../components/SkillsLog.astro';
 import CommitTimeline from '../components/CommitTimeline.tsx';
 import { personalInfo } from '../data/content';
+
+const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
 ---
 
 <html lang="en">
@@ -11,8 +13,14 @@ import { personalInfo } from '../data/content';
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={metaDescription} />
     <title>{personalInfo.name}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700;900&display=swap"
+    />
   </head>
   <body
     class="bg-zinc-900 text-zinc-400 font-sans antialiased selection:bg-zinc-800 selection:text-white lg:h-screen lg:overflow-hidden"

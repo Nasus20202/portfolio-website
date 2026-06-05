@@ -30,7 +30,7 @@ import { icon } from '../utils/icon';
               target="_blank"
               rel="noopener noreferrer"
               class="group flex items-center gap-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors w-full"
-              aria-label={`${social.name} (opens in a new tab)`}
+              aria-label={`${social.name} ${social.displayText || social.url} (opens in a new tab)`}
             >
               {iconSvg && (
                 <span

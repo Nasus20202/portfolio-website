@@ -3,7 +3,7 @@ import '../styles/global.css';
 import AboutMe from '../components/AboutMe.astro';
 import SkillsLog from '../components/SkillsLog.astro';
 import CommitTimeline from '../components/CommitTimeline.tsx';
-import { personalInfo } from '../data/content';
+import { personalInfo } from '../data';
 
 const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
 ---
@@ -11,7 +11,7 @@ const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={metaDescription} />
     <title>{personalInfo.name}</title>

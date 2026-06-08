@@ -1,18 +1,16 @@
 ---
-import { skills } from '../data/content';
+import { skills } from '../data';
 import { getShortHash } from '../utils/hash';
-import { icon } from '../utils/icon';
-import { personalInfo } from '../data/content';
+import Icon from './Icon.astro';
+import { personalInfo } from '../data';
+import { TerminalWindow } from './TerminalWindow';
 ---
 
-<div class="rounded-xl border border-zinc-800 bg-zinc-900/80 overflow-hidden shadow-sm">
-  <div class="border-b border-zinc-800 bg-zinc-950 px-4 py-3 flex items-center gap-2">
-    <div class="ml-2 text-xs font-mono text-zinc-500">
-      {personalInfo.alias.toLowerCase()}@portfolio: ~/skills$ git log --oneline
-    </div>
-  </div>
-
-  <div class="p-4 md:p-6 font-mono text-sm sm:text-base space-y-5">
+<TerminalWindow
+  command={`${personalInfo.alias.toLowerCase()}@portfolio: ~/skills$ git log --oneline`}
+  className="shadow-sm bg-zinc-900/80"
+>
+  <div class="space-y-5">
     {
       skills.map((category) => {
         const hash = getShortHash(category.id);
@@ -26,10 +24,9 @@ import { personalInfo } from '../data/content';
                 <span class="text-zinc-300">feat: {category.name}</span>
               </div>
               <div class="flex gap-2 sm:ml-auto opacity-70 group-hover:opacity-100 transition-opacity">
-                {category.icons.map((slug) => {
-                  const iconSvg = icon(slug, { class: 'h-5 w-5 fill-current text-zinc-400' });
-                  return iconSvg ? <span set:html={iconSvg} /> : null;
-                })}
+                {category.icons.map((slug) => (
+                  <Icon slug={slug as never} className="h-5 w-5 fill-current text-zinc-400" />
+                ))}
               </div>
             </div>
             {category.details && (
@@ -42,4 +39,4 @@ import { personalInfo } from '../data/content';
       })
     }
   </div>
-</div>
+</TerminalWindow>

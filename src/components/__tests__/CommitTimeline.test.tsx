@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import CommitTimeline from '../CommitTimeline';
-import { timelineEvents } from '../../data/content';
+import { timelineEvents } from '../../data';
 
 describe('CommitTimeline', () => {
   it('renders the SVG graph', () => {

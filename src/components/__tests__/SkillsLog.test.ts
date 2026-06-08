@@ -1,11 +1,16 @@
 // @vitest-environment node
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
+import { loadRenderers } from 'astro:container';
 import { describe, it, expect } from 'vitest';
 import SkillsLog from '../SkillsLog.astro';
+import { getContainerRenderer } from '@astrojs/react';
 
 describe('SkillsLog.astro', () => {
   it('renders without crashing and contains terminal structure', async () => {
-    const container = await AstroContainer.create();
+    const renderers = await loadRenderers([getContainerRenderer()]);
+    const container = await AstroContainer.create({
+      renderers,
+    });
     const result = await container.renderToString(SkillsLog);
 
     // Test for structural correctness and shell command presence

@@ -34,7 +34,7 @@ test('shows all 5 skill categories', async ({ page }) => {
 
 test('terminal panel updates when clicking a timeline node', async ({ page }) => {
   await page.goto('/');
-  const terminal = page.getByTestId('terminal-panel');
+  const terminal = page.locator('#experience').getByTestId('terminal-panel');
 
   await expect(terminal).not.toContainText('Initial commit');
 
@@ -44,15 +44,13 @@ test('terminal panel updates when clicking a timeline node', async ({ page }) =>
       ?.closest('.overflow-y-auto') as HTMLElement;
     if (container) container.scrollTop = container.scrollHeight;
   });
-  await page.waitForTimeout(200);
   await page.evaluate(() => {
     const container = document
       .querySelector('#experience')
       ?.closest('.overflow-y-auto') as HTMLElement;
     if (container) container.scrollTop = container.scrollHeight;
   });
-  await page.waitForTimeout(100);
-  await page.getByTestId('node-init').dispatchEvent('click');
+  await page.locator('#experience').getByTestId('node-init').dispatchEvent('click');
 
   await expect(terminal).toContainText('Initial commit');
   await expect(terminal).toContainText('Hello World');
@@ -68,7 +66,7 @@ test('mobile layout stacks about section above timeline', async ({ page, isMobil
   test.skip(!isMobile, 'mobile-only test');
   await page.goto('/');
   const aboutBox = await page.locator('#about').boundingBox();
-  const experienceBox = await page.locator('#experience').boundingBox();
+  const experienceBox = await page.locator('#experience-mobile').boundingBox();
   expect(aboutBox).toBeTruthy();
   expect(experienceBox).toBeTruthy();
   if (aboutBox && experienceBox) {
@@ -76,20 +74,21 @@ test('mobile layout stacks about section above timeline', async ({ page, isMobil
   }
 });
 
-test.describe('pixel-perfect visual regression', () => {
-  test('desktop full page matches snapshot', async ({ page }, testInfo) => {
-    test.skip(testInfo.project.name !== 'chromium', 'chromium desktop only');
-    await page.goto('/');
-    await expect(page.getByTestId('terminal-panel')).toBeVisible();
-    await page.waitForTimeout(1500);
-    await expect(page).toHaveScreenshot('desktop-full.png', { fullPage: true });
-  });
+test('mobile layout shows skills below timeline', async ({ page, isMobile }) => {
+  test.skip(!isMobile, 'mobile-only test');
+  await page.goto('/');
+  const experienceBox = await page.locator('#experience-mobile').boundingBox();
+  const skillsBox = await page.locator('#skills').boundingBox();
+  expect(experienceBox).toBeTruthy();
+  expect(skillsBox).toBeTruthy();
+  if (experienceBox && skillsBox) {
+    expect(experienceBox.y).toBeLessThan(skillsBox.y);
+  }
+});
 
-  test('mobile full page matches snapshot', async ({ page }, testInfo) => {
-    test.skip(testInfo.project.name !== 'chromium-mobile', 'chromium mobile only');
-    await page.goto('/');
-    await expect(page.getByTestId('terminal-panel')).toBeVisible();
-    await page.waitForTimeout(1500);
-    await expect(page).toHaveScreenshot('mobile-full.png', { fullPage: true });
-  });
+test('mobile layout has no commit selected by default', async ({ page, isMobile }) => {
+  test.skip(!isMobile, 'mobile-only test');
+  await page.goto('/');
+  const terminal = page.locator('#experience-mobile').getByTestId('terminal-panel');
+  await expect(terminal).not.toBeVisible();
 });

@@ -21,6 +21,10 @@ export default function CommitTimeline({
   const totalHeight = timelineEvents.length * ROW_HEIGHT;
   const textX = 20 + maxCol * LANE_WIDTH + LANE_WIDTH;
 
+  // Estimate required width based on lane width, text offset, and longest title
+  const maxTitleLength = Math.max(...timelineEvents.map((e) => e.title.length), 0);
+  const calculatedWidth = textX + maxTitleLength * 9;
+
   const handleNodeClick = (event: TimelineEvent) => {
     setSelectedEvent(event);
   };
@@ -30,10 +34,9 @@ export default function CommitTimeline({
       {/* Graph Area */}
       <div className="relative border border-zinc-800 bg-zinc-900/50 rounded-xl p-4 md:p-6 overflow-x-auto no-scrollbar">
         <svg
-          width="100%"
+          width={calculatedWidth}
           height={totalHeight}
-          className="min-w-75"
-          style={{ minHeight: totalHeight }}
+          style={{ minWidth: '100%' }}
           data-testid="timeline-svg"
         >
           {/* 1. Draw Paths First (so they are behind nodes) */}

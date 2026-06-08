@@ -15,32 +15,29 @@ const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={metaDescription} />
     <title>{personalInfo.name}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lato:wght@400;700;900&display=swap"
-    />
   </head>
   <body
     class="bg-zinc-900 text-zinc-400 font-sans antialiased selection:bg-zinc-800 selection:text-white lg:h-screen lg:overflow-hidden"
   >
     <main class="mx-auto max-w-7xl lg:h-full lg:min-h-0">
       <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:h-full lg:min-h-0">
-        <!-- Left Column: Timeline -->
+        <!-- Left Column: Timeline (desktop only) -->
         <div
-          class="flex flex-col gap-8 order-2 lg:order-1 lg:h-full lg:overflow-y-auto no-scrollbar px-3 py-6 md:px-6 md:py-12 lg:pb-12"
+          class="hidden lg:flex flex-col gap-8 order-2 lg:order-1 lg:h-full lg:overflow-y-auto no-scrollbar px-3 py-6 md:px-6 md:py-12 lg:pb-12"
         >
-          <section id="experience" class="h-full">
+          <section id="experience" class="h-full lg:h-auto">
             <CommitTimeline client:load />
           </section>
         </div>
 
-        <!-- Right Column: About & Skills -->
+        <!-- Right Column: About, Git history (mobile), & Skills -->
         <div
           class="flex flex-col gap-10 order-1 lg:order-2 lg:h-full lg:overflow-y-auto no-scrollbar px-3 py-6 md:px-6 md:py-12 lg:pb-12"
         >
           <AboutMe />
+          <section id="experience-mobile" class="lg:hidden">
+            <CommitTimeline client:load selectFirstByDefault={false} />
+          </section>
           <section id="skills">
             <SkillsLog />
           </section>

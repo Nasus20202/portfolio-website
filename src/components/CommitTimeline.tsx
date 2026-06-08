@@ -21,9 +21,13 @@ function stringToColor(str: string) {
   return `hsl(${h}, 70%, 65%)`;
 }
 
-export default function CommitTimeline() {
+export default function CommitTimeline({
+  selectFirstByDefault = true,
+}: {
+  selectFirstByDefault?: boolean;
+}) {
   const [selectedEvent, setSelectedEvent] = useState<TimelineEvent | null>(
-    timelineEvents[0] || null
+    selectFirstByDefault ? timelineEvents[0] || null : null
   );
 
   // Dynamic lane to column mapping

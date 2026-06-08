@@ -1,6 +1,6 @@
 ---
-import { personalInfo } from '../data/content';
-import { icon } from '../utils/icon';
+import { personalInfo } from '../data';
+import Icon from './Icon.astro';
 ---
 
 <section id="about" class="scroll-mt-24">
@@ -22,7 +22,6 @@ import { icon } from '../utils/icon';
   <ul class="mt-8 flex flex-col gap-4" aria-label="Social links">
     {
       personalInfo.socials.map((social) => {
-        const iconSvg = icon(social.iconSlug, { class: 'h-5 w-5 fill-current' });
         return (
           <li class="flex">
             <a
@@ -32,12 +31,9 @@ import { icon } from '../utils/icon';
               class="group flex items-center gap-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors w-full"
               aria-label={`${social.name} ${social.displayText || social.url} (opens in a new tab)`}
             >
-              {iconSvg && (
-                <span
-                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-zinc-800/50 ring-1 ring-inset ring-zinc-700/50 transition-colors group-hover:bg-zinc-800 group-hover:text-emerald-400"
-                  set:html={iconSvg}
-                />
-              )}
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-zinc-800/50 ring-1 ring-inset ring-zinc-700/50 transition-colors group-hover:bg-zinc-800 group-hover:text-emerald-400">
+                <Icon slug={social.iconSlug as never} className="h-5 w-5" colorful={false} />
+              </span>
               <div class="flex flex-col">
                 <span class="text-xs text-zinc-500 font-mono">{social.name}</span>
                 <span class="text-zinc-300 font-mono group-hover:text-emerald-400 transition-colors">

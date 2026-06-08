@@ -17,6 +17,9 @@ importers:
       '@fontsource/lato':
         specifier: ^5.2.7
         version: 5.2.7
+      '@lucide/astro':
+        specifier: ^1.17.0
+        version: 1.17.0(astro@6.4.4(@types/node@25.9.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.61.1))
       '@tailwindcss/vite':
         specifier: ^4.3.0
         version: 4.3.0(vite@7.3.5(@types/node@25.9.2)(jiti@2.7.0)(lightningcss@1.32.0))
@@ -701,6 +704,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@lucide/astro@1.17.0':
+    resolution: {integrity: sha512-wF5wyjF8zThvI5JVUWG1WLoFdbTcMNXouxnholAyR0EEFfWNnGP1DGsvuu7cym/2mj2vUEjPbIPPDgWwjabFRQ==}
+    peerDependencies:
+      astro: ^4 || ^5 || ^6
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3839,6 +3847,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@lucide/astro@1.17.0(astro@6.4.4(@types/node@25.9.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.61.1))':
+    dependencies:
+      astro: 6.4.4(@types/node@25.9.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.61.1)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

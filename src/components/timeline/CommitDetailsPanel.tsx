@@ -1,6 +1,6 @@
 import type { TimelineEvent } from '../../data/types';
 import { personalInfo } from '../../data';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { TerminalWindow } from '../TerminalWindow';
 import { getEventHash } from '../../utils/timeline';
 

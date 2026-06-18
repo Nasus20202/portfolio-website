@@ -9,7 +9,7 @@ The project is a modern web application built with the following stack:
 - **Framework**: [Astro](https://astro.build/) (Static Site Generation / Server-Side Rendering)
 - **UI Library**: [React](https://react.dev/) (used for interactive components)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) (utility-first CSS)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) (React animation library)
+- **Animations**: [Motion](https://motion.dev/) (React animation library)
 - **Icons**: [Lucide React](https://lucide.dev/) & Simple Icons
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Testing**: [Vitest](https://vitest.dev/) (Unit) & [Playwright](https://playwright.dev/) (E2E)

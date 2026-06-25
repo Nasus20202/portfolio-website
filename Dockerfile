@@ -1,5 +1,5 @@
 # Stage 1: Build the Astro static site
-FROM node:24.17.0-alpine AS builder
+FROM node:24.18.0-alpine AS builder
 # Enable corepack for pnpm
 RUN corepack enable && corepack prepare pnpm@latest --activate
 WORKDIR /app

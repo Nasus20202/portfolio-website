@@ -30,7 +30,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content={personalInfo.name} />
-    <meta property="og:image" content={new URL('/og-image.svg', Astro.url)} />
+    <meta property="og:image" content={new URL('/og-image.webp', Astro.url)} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={`Portfolio of ${personalInfo.name}`} />
@@ -40,7 +40,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={metaDescription} />
-    <meta name="twitter:image" content={new URL('/og-image.svg', Astro.url)} />
+    <meta name="twitter:image" content={new URL('/og-image.webp', Astro.url)} />
 
     <!-- JSON-LD Structured Data -->
     <script

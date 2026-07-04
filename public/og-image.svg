@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><path fill="#18181b" d="M0 0h1200v630H0z"/><rect x="40" y="40" width="1120" height="550" rx="12" fill="none" stroke="#52525b" stroke-width="2"/><circle cx="74" cy="72" r="7" fill="#ff5f57"/><circle cx="102" cy="72" r="7" fill="#febc2e"/><circle cx="130" cy="72" r="7" fill="#28c840"/><text x="470" y="78" font-family="'JetBrains Mono', monospace" font-size="16" fill="#a1a1aa">portfolio — bash</text><path stroke="#52525b" d="M40 100h1120"/><text x="80" y="170" font-family="'JetBrains Mono', monospace" font-size="22">
+      <tspan fill="#71717a">~/portfolio</tspan>
+      <tspan fill="#34d399"> $</tspan>
+      <tspan fill="#a78bfa"> whoami</tspan>
+    </text><text font-family="'Lato', system-ui, sans-serif" font-size="120" font-weight="700" fill="#fff">
+    <tspan x="80" y="370">Krzysztof</tspan>
+    <tspan x="80" y="480">Nasuta</tspan>
+  </text></svg>

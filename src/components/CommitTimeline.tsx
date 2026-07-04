@@ -23,7 +23,7 @@ export default function CommitTimeline({
 
   // Estimate required width based on lane width, text offset, and longest title
   const maxTitleLength = Math.max(...timelineEvents.map((e) => e.title.length), 0);
-  const calculatedWidth = textX + maxTitleLength * 9;
+  const calculatedWidth = textX + maxTitleLength * 10.5;
 
   const handleNodeClick = (event: TimelineEvent) => {
     setSelectedEvent(event);

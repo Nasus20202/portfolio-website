@@ -1,5 +1,18 @@
 ---
-
+import '../styles/global.css';
+import LoaderCircle from '@lucide/astro/icons/loader-circle';
 ---
 
-<meta http-equiv="refresh" content="0;url=/" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0;url=/" />
+    <title>Redirecting...</title>
+  </head>
+  <body class="bg-zinc-900 min-h-screen flex items-center justify-center">
+    <LoaderCircle class="size-24 text-emerald-400 animate-spin" />
+  </body>
+</html>

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('page title is set correctly', async ({ page }) => {
   await page.goto('/');
-  await expect(page).toHaveTitle('Krzysztof Nasuta');
+  await expect(page).toHaveTitle('Krzysztof Nasuta — Software Engineer');
 });
 
 test('displays personal info', async ({ page }) => {

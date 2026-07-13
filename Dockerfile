@@ -1,11 +1,13 @@
 # Stage 1: Build the Astro static site
 FROM node:24.18.0-alpine AS builder
 # Enable corepack for pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable
 WORKDIR /app
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN corepack install
 ENV CI=true
-RUN pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store \
+    pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm run build
 

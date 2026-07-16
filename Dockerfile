@@ -12,7 +12,7 @@ COPY . .
 RUN pnpm run build
 
 # Stage 2: Serve with Nginx unprivileged
-FROM nginxinc/nginx-unprivileged:1.31.2-alpine
+FROM nginxinc/nginx-unprivileged:1.31.3-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Copy built files from the builder stage
 COPY --from=builder /app/dist /app

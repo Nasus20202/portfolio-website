@@ -6,7 +6,7 @@ import CommitTimeline from '../components/CommitTimeline.tsx';
 import { personalInfo } from '../data';
 
 const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
-const title = `${personalInfo.name} — ${personalInfo.role}`;
+const title = personalInfo.name;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 

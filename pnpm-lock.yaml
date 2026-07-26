@@ -49,7 +49,7 @@ importers:
         version: 19.2.8(react@19.2.8)
       simple-icons:
         specifier: ^16.22.0
-        version: 16.27.0
+        version: 16.27.1
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.3
@@ -3029,8 +3029,8 @@ packages:
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
 
-  simple-icons@16.27.0:
-    resolution: {integrity: sha512-Rk2dCRVCPHnla9/mHmztJOlbkfncPDUMSOPozQO3+c+vr6Uwy9jhNHeuxxvNZgbF9ZwpoT1BCu1LNB4Q07VmZQ==}
+  simple-icons@16.27.1:
+    resolution: {integrity: sha512-slZF8iKxkv7Lb9SF3L1AcIl5iYLNvDrKKm8yV69cG66XvxJ12SX+bYTgxRwCY4bXSmklGXoXaKEyVmEypOCeqw==}
     engines: {node: '>=0.12.18'}
 
   sisteransi@1.0.5:
@@ -6592,7 +6592,7 @@ snapshots:
 
   siginfo@2.0.0: {}
 
-  simple-icons@16.27.0: {}
+  simple-icons@16.27.1: {}
 
   sisteransi@1.0.5: {}
 

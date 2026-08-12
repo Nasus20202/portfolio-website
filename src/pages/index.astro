@@ -5,8 +5,8 @@ import SkillsLog from '../components/SkillsLog.astro';
 import CommitTimeline from '../components/CommitTimeline.tsx';
 import { personalInfo } from '../data';
 
-const metaDescription = personalInfo.bio.replace(/<[^>]*>/g, '').trim();
 const title = personalInfo.name;
+const metaDescription = `${title} - ${personalInfo.bio.replace(/<[^>]*>/g, '').trim()}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 

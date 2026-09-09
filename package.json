@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --write . && git diff -- src/components/AboutMe.astro src/components/Icon.astro src/components/SkillsLog.astro src/pages/index.astro && exit 1",
+    "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

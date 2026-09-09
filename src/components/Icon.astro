@@ -70,19 +70,17 @@ const UiComponent = slug in UI_ICONS ? UI_ICONS[slug as keyof typeof UI_ICONS] :
 const fill = colorful && brand ? `#${brand.hex}` : 'currentColor';
 ---
 
-{
-  UiComponent ? (
-    <UiComponent class={finalClass} />
-  ) : brand ? (
-    <svg class={finalClass} viewBox="0 0 24 24" fill={fill}>
-      <title>{brand.title}</title>
-      {slug === 'java' ? (
-        <g transform="scale(0.1875)">
-          <path d={brand.path} />
-        </g>
-      ) : (
+{UiComponent ? (
+  <UiComponent class={finalClass} />
+) : brand ? (
+  <svg class={finalClass} viewBox="0 0 24 24" fill={fill}>
+    <title>{brand.title}</title>
+    {slug === 'java' ? (
+      <g transform="scale(0.1875)">
         <path d={brand.path} />
-      )}
-    </svg>
-  ) : null
-}
+      </g>
+    ) : (
+      <path d={brand.path} />
+    )}
+  </svg>
+) : null}

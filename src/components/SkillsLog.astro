@@ -11,32 +11,30 @@ import { TerminalWindow } from './TerminalWindow';
   className="shadow-sm bg-zinc-900/80"
 >
   <div class="space-y-5">
-    {
-      skills.map((category) => {
-        const hash = getShortHash(category.id);
-        return (
-          <div class="flex flex-col gap-2 group">
-            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-              <div class="flex items-center gap-3">
-                <span class="text-amber-400 group-hover:text-amber-300 transition-colors">
-                  {hash}
-                </span>
-                <span class="text-zinc-300">feat: {category.name}</span>
-              </div>
-              <div class="flex gap-2 sm:ml-auto opacity-70 group-hover:opacity-100 transition-opacity">
-                {category.icons.map((slug) => (
-                  <Icon slug={slug as never} className="h-5 w-5 fill-current text-zinc-400" />
-                ))}
-              </div>
+    {skills.map((category) => {
+      const hash = getShortHash(category.id);
+      return (
+        <div class="flex flex-col gap-2 group">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 group-hover:text-amber-300 transition-colors">
+                {hash}
+              </span>
+              <span class="text-zinc-300">feat: {category.name}</span>
             </div>
-            {category.details && (
-              <div class="text-xs text-zinc-500 sm:ml-15 pl-3 border-l border-zinc-700">
-                {category.details}
-              </div>
-            )}
+            <div class="flex gap-2 sm:ml-auto opacity-70 group-hover:opacity-100 transition-opacity">
+              {category.icons.map((slug) => (
+                <Icon slug={slug as never} className="h-5 w-5 fill-current text-zinc-400" />
+              ))}
+            </div>
           </div>
-        );
-      })
-    }
+          {category.details && (
+            <div class="text-xs text-zinc-500 sm:ml-15 pl-3 border-l border-zinc-700">
+              {category.details}
+            </div>
+          )}
+        </div>
+      );
+    })}
   </div>
 </TerminalWindow>

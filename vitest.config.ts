@@ -1,12 +1,13 @@
 import { getViteConfig } from 'astro/config';
-import { defineConfig } from 'vitest/config';
+import type { UserConfig } from 'vitest/config';
 
-export default defineConfig({
-  ...getViteConfig({}),
+const config: UserConfig = {
   test: {
     environment: 'jsdom',
     globals: true,
     exclude: ['**/node_modules/**', '**/e2e/**'],
     setupFiles: ['./vitest.setup.ts'],
   },
-});
+};
+
+export default getViteConfig(config);

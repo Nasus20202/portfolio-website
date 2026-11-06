@@ -41,9 +41,22 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
     {
+      /* Playwright has no Firefox phone profile: this is the phone viewport */
+      name: 'firefox-mobile',
+      use: {
+        ...devices['Desktop Firefox'],
+        viewport: devices['Pixel 5'].viewport,
+        isMobile: true,
+      },
+    },
+    {
       /* The Safari profile defaults to 2x, which software rendering on CI cannot keep up with. */
       name: 'webkit',
       use: { ...devices['Desktop Safari'], deviceScaleFactor: 1 },
+    },
+    {
+      name: 'webkit-mobile',
+      use: { ...devices['iPhone 13'], deviceScaleFactor: 1 },
     },
   ],
 

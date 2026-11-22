@@ -192,7 +192,7 @@ importers:
         version: 5.3.0
       '@lucide/astro':
         specifier: ^1.17.0
-        version: 1.75.0(astro@7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
+        version: 1.76.0(astro@7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
       '@tailwindcss/vite':
         specifier: ^4.3.0
         version: 4.3.5(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
@@ -207,7 +207,7 @@ importers:
         version: 7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1)
       lucide-react:
         specifier: ^1.17.0
-        version: 1.75.0(@types/react@19.3.0)(react@19.3.1)
+        version: 1.76.0(@types/react@19.3.0)(react@19.3.1)
       motion:
         specifier: ^14.0.0
         version: 14.14.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -858,8 +858,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lucide/astro@1.75.0':
-    resolution: {integrity: sha512-cTkJqOYjEFhWBySwHG/6kqER3gEWHhkR0yf5G8hr/EycfEL+VvyLQHgvWgYhYiK9QNiW9tuUQKNNJPSV6TboUQ==}
+  '@lucide/astro@1.76.0':
+    resolution: {integrity: sha512-+jgka4XCCdzb5LOLN2tDRH5Y1lut84T1BaWkZzzt49c0ZaXfCeDF2nqxl5vrnI+L4kByPlQOz+yu9jeqjZhwjw==}
     peerDependencies:
       astro: ^4 || ^5 || ^6 || ^7
 
@@ -2516,8 +2516,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@1.75.0:
-    resolution: {integrity: sha512-piesXAZIXru9d5lHBoM6cPHOBs5+QkMx+3EXwG3xWJ7qdViuz92JtYN0u9jMB6jt+2WbQrwhvJGdMwGnL3EOfA==}
+  lucide-react@1.76.0:
+    resolution: {integrity: sha512-wRVHt2Xf64GXndB4rQOY9+3Wy9oJ59HDMYv6vwhT0hpSwUxQhG/RM9YijnOmvmIQ+VI/n+1V/FKd6gP4XL2aBQ==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -3988,7 +3988,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lucide/astro@1.75.0(astro@7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))':
+  '@lucide/astro@1.76.0(astro@7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))':
     dependencies:
       astro: 7.4.13(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1)
 
@@ -5692,7 +5692,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@1.75.0(@types/react@19.3.0)(react@19.3.1):
+  lucide-react@1.76.0(@types/react@19.3.0)(react@19.3.1):
     dependencies:
       react: 19.3.1
     optionalDependencies:
